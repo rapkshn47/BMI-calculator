@@ -145,7 +145,7 @@ body{
     align-self: center;
   }
 
-  .form-container{
+  .form-container > form{
     width: 100%;
   }
 
