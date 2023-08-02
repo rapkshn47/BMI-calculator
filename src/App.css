@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(224, 224, 224);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin-top: 1em;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 2em;
+}
+
+.form-container{
+  padding: 2em;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 2%;
+}
+
+.form-container input{
+  width: 100%;
+  box-sizing: border-box;
+  height: 2em;
+}
+
+.form-container form{
+  display: flex;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1em;
+}
+
+.form-container button{
+  background-color: rgb(53, 53, 255);
+  padding: 0.9em 2em;
   color: white;
+  border: none;
+  border-radius: 4%;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.alert-box{
+  margin-top: 1em;
+  background-color: rgb(241, 207, 213);
+  color: rgb(158, 41, 41);
+  /* border: 1px solid red; */
+  padding: 1em 2em;
+  border-radius: 4px;
+  /* display: none; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* --------------BMIList---------------- */
+.bmi-container{
+  padding: 2em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.bmi-container div{
+  background-color: rgb(145, 199, 224) !important;
+  padding: 1em 2em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.score{
+  font-size: 2em;
+  color: rgb(56, 56, 255);
+}
+
+.bmi-container .suggestion{
+  font-weight: 400;
+}
+.type{
+  color: rgb(56, 56, 255);
+  font-weight:700;
+}
+
+.two{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2em;
+}
+
+/* ----List Container------ */
+.list-container{
+  /* width: 50wh; */
+  /* border: 2px solid red; */
+  background-color: white;
+}
+
+.my-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.my-table th,
+.my-table td {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.my-table th {
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.border-red{
+  border: 2px solid red;
+}
+.nothing{
+
+}
+
+@media (max-width: 768px) {
+  .container{
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 0;
+    
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .bmi-container, .form-container, .list-container{
+    /* width: 100%; */
+    box-shadow: none;
   }
+
+  .bmi-container{
+    width: 100%;
+  }
+
+  .suggestion{
+    text-align: center;
+  }
+  
+  
 }
