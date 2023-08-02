@@ -28,7 +28,7 @@ function App() {
     const range = {
       underWeight: { low: callWeight(18.5,h) },
       normal: { low: callWeight(18.5,h), high: callWeight(24.9,h) },
-      overWeight: { low: callWeight(25,h), high: callWeight(24.9,h) },
+      overWeight: { low: callWeight(25,h), high: callWeight(29.9,h) },
       obesityOne: { low: callWeight(30,h), high: callWeight(34.9,h) },
       obesityTwo: { low: callWeight(35,h), high: callWeight(39.9,h) },
       obesityThree: { high: callWeight(40,h) },
