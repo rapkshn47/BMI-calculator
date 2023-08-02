@@ -139,11 +139,14 @@ body{
     align-self: center; 
   }
 
-
-  .bmi-container, .form-container, .list-container{
+  .bmi-container, .list-container{
     width: 100%;
     box-shadow: none;
     align-self: center;
+  }
+
+  .form-container{
+    width: 100%;
   }
 
   .bmi-container{
