@@ -129,13 +129,19 @@ body{
   .container{
     display: flex;
     flex-flow: column wrap;
-    margin-top: 0;
+    margin-top: 1rem;
+    width: 100%;
     
+  }
+
+  .my-table{
+    width: 100% !important;
+    align-self: center; 
   }
 
 
   .bmi-container, .form-container, .list-container{
-    /* width: 100%; */
+    width: 100%;
     box-shadow: none;
   }
 
